@@ -1,0 +1,448 @@
+:root{
+    --iris: #4D5AE5;
+    --cornflower: #E7E9FC;
+    --navyblue: #2E2F42;
+    --slate: #434455;
+    --ocean: #404BBF;
+    --cloud: #F4F4FD;
+    --white: #fff;
+}
+
+body{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--cornflower);
+}
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+ a{
+    text-decoration: none;
+ }
+
+ .container{
+    width: 1158px;
+ }
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    color: var(--navyblue);
+    position: relative;
+}
+
+.navigation::after{ 
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 3px;
+    border-radius: 2px;
+    width: 0;
+    background: var(--ocean);
+    transition: width 0.24s ease 0s, left 0.24s ease 0s;
+}
+
+.navigation:hover::after{
+    border-bottom: 2px;
+    width: 100%; 
+    left: 0; 
+}
+
+.navigation:hover, .navigation:focus{
+    color: var(--ocean);
+}
+
+.logo{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.WebLogo{
+    color: var(--iris);
+}
+
+.StudioLogo{
+    color: var(--navyblue);
+}
+
+.StudioLogo2{
+    color: var(--cloud);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.title_info li{
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts{
+    margin-left: 400px;
+}
+
+.contacts a{
+    color: var(--slate);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts a:hover, .contacts a:focus{
+    color: var(--ocean);
+}
+
+.title_info li, .contacts li{
+    margin-right: 35px;
+}
+
+.hero{
+    height: 600px;
+    background-color: var(--navyblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.credo{
+    width: 500px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 1.07;
+}
+
+.fakebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    height: 56px;
+    color: var(--white);
+    background-color: var(--iris);
+    border-radius: 4px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.fakebutton:hover, .fakebutton:focus{
+    box-shadow: none;
+    background-color: var(--ocean);
+}
+
+.fakebutton:active{
+    background-color: var(--ocean);
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.about_us{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.About_Us{
+    font-size: 36px;
+    color: var(--navyblue);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.about_us h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.about_us p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.skills{
+    width: 1200px;
+    height: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills li{
+    margin-right: 24px
+}
+
+.skills h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+
+.skills p{
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.what_are_we_doing{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.what_are_we_doing li{
+    width: 360px;
+}
+
+.what_are_we_doing h2, .team h2{
+    color: var(--navyblue);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.images img{
+    width: 360;
+    height: 300;
+    margin-right: 24px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color: var(--cloud);
+}
+
+.team_pics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_pics li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 370px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-right: 30px;
+    background-color: var(--white);
+}
+
+.team_pics li h3{
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.team li p{
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+footer{
+    height: 310px;
+    background-color: var(--navyblue);
+    display: flex;
+    justify-content: center;
+    flex-direction: column  ;
+}
+
+a.end_text{
+    margin-left: 156px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+}
+
+p.end_text{
+    width: 264px;
+    color: var(--cornflower);
+    margin-left: 156px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.WEB{
+    color: var(--iris);
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 75px;
+}
+
+.filters button{
+    font-family: inherit;
+    margin-left: 24px;
+    color: var(--iris);
+    height: 48px;
+    background-color: var(--cloud);
+    border: 1px solid var(--cornflower);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.filters button:hover{
+    background-color: var(--iris);
+    color: var(--white);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
+}
+
+.filters button:focus{
+    background-color: var(--iris);
+    color: var(--white);
+    border-radius: 4px;
+    border: none;
+}
+
+.all-btn{
+    width: 69px;
+}
+
+.website-btn{
+    width: 116px;
+}
+
+.app-btn{
+    width: 78px;
+}
+
+.design-btn{
+    width:101px;
+}
+
+.marketing-btn{
+    width: 126px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--navyblue);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+}
+
+.products_item{
+    display: inline-block;
+    block-size: 30%;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    border: 1px solid var(--cornflower);
+}
+
+.products p{
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.products section ul, .products section ul{
+    margin-left: 16px;
+}
+
+.second_row{
+    margin-left: 67px;
+}
