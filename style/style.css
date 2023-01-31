@@ -9,6 +9,7 @@
 }
 
 body{
+    width: 1440px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
@@ -38,10 +39,6 @@ header{
 
  a{
     text-decoration: none;
- }
-
- .container{
-    width: 1158px;
  }
 
 .title{
@@ -407,6 +404,10 @@ p.end_text{
     width: 126px;
 }
 
+[type="button"]{
+    cursor: pointer;
+}
+
 .products{
     display: flex;
     flex-wrap: wrap;
@@ -441,8 +442,4 @@ p.end_text{
 
 .products section ul, .products section ul{
     margin-left: 16px;
-}
-
-.second_row{
-    margin-left: 67px;
 }
